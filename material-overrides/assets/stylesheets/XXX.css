@@ -1,0 +1,471 @@
+:root {
+  --md-border-radius: .3rem;
+  --md-border-width: .1rem;
+}
+
+:root,
+[data-md-color-scheme='default'] {
+  --md-primary-fg-color: #a5c9e8;
+  --md-primary-fg-color--light: #dbe9f6;
+  --md-primary-fg-color--dark: #c9dff1;
+  --md-primary-bg-color: #373434;
+
+  --md-accent-fg-color: #ffffff;
+  --md-accent-fg-color-light: #ffffff90;
+  --md-accent-bg-color: #a5c9e8;
+
+  --md-footer-fg-color: #373434;
+  --md-footer-fg-color--light: #4b4848;
+  --md-footer-bg-color: #c9dff1;
+  --md-footer-bg-color--dark: #b7d4ed;
+
+  --md-typeset-a-color: #4a93d1;
+  --md-typeset-a-color--hover: #346792;
+
+  --md-palette-icon-color: #ed9b0f;
+  --md-palette-icon-color--hover: #be7c0c;
+
+  /* Admonition SVGs (base64 encoded) - use Material icons */
+  --md-admonition-icon-color--note: #4a93d1;
+  --md-admonition-icon--note: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIDYuNC4wIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIENvcHlyaWdodCAyMDIzIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBkPSJNNDEwLjMgMjMxbDExLjMtMTEuMy0zMy45LTMzLjktNjIuMS02Mi4xTDI5MS43IDg5LjhsLTExLjMgMTEuMy0yMi42IDIyLjZMNTguNiAzMjIuOWMtMTAuNCAxMC40LTE4IDIzLjMtMjIuMiAzNy40TDEgNDgwLjdjLTIuNSA4LjQtLjIgMTcuNSA2LjEgMjMuN3MxNS4zIDguNSAyMy43IDYuMWwxMjAuMy0zNS40YzE0LjEtNC4yIDI3LTExLjggMzcuNC0yMi4yTDM4Ny43IDI1My43IDQxMC4zIDIzMXpNMTYwIDM5OS40bC05LjEgMjIuN2MtNCAzLjEtOC41IDUuNC0xMy4zIDYuOUw1OS40IDQ1MmwyMy03OC4xYzEuNC00LjkgMy44LTkuNCA2LjktMTMuM2wyMi43LTkuMXYzMmMwIDguOCA3LjIgMTYgMTYgMTZoMzJ6TTM2Mi43IDE4LjdMMzQ4LjMgMzMuMiAzMjUuNyA1NS44IDMxNC4zIDY3LjFsMzMuOSAzMy45IDYyLjEgNjIuMSAzMy45IDMzLjkgMTEuMy0xMS4zIDIyLjYtMjIuNiAxNC41LTE0LjVjMjUtMjUgMjUtNjUuNSAwLTkwLjVMNDUzLjMgMTguN2MtMjUtMjUtNjUuNS0yNS05MC41IDB6bS00Ny40IDE2OGwtMTQ0IDE0NGMtNi4yIDYuMi0xNi40IDYuMi0yMi42IDBzLTYuMi0xNi40IDAtMjIuNmwxNDQtMTQ0YzYuMi02LjIgMTYuNC02LjIgMjIuNiAwczYuMiAxNi40IDAgMjIuNnoiLz48L3N2Zz4=');
+  --md-admonition-icon--code: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTE0LjYsMTYuNkwxOS4yLDEyTDE0LjYsNy40TDE2LDZMMjIsMTJMMTYsMThMMTQuNiwxNi42TTkuNCwxNi42TDQuOCwxMkw5LjQsNy40TDgsNkwyLDEyTDgsMThMOS40LDE2LjZaIiAvPjwvc3ZnPg==');
+
+  /** Optional: For branded code snippets**/
+  /** Code highlighting color shades **/
+  /* Numbers */
+  /* --md-code-hl-number-color: white; */
+  /* Python function names */
+  /* --md-code-hl-function-color: red; */
+  /* JavaScript booleans, Python variable names */
+  /* --md-code-hl-name-color: orange; */
+  /* Strings */
+  /* --md-code-hl-string-color: yellow; */
+  /* Python print */
+  /* --md-code-hl-constant-color: green; */
+  /* Imports, const, let, var, async, await, function, etc. */
+  /* --md-code-hl-keyword-color: blue; */
+  /* Comments */
+  /* --md-code-hl-comment-color: purple; */
+}
+
+[data-md-color-scheme='slate'] {
+  --md-primary-fg-color: #254a69;
+  --md-primary-fg-color--light: #1e3b5490;
+  --md-primary-fg-color--dark: #254a69;
+
+  --md-accent-fg-color: #ffffff;
+  --md-accent-fg-color-light: #ffffff90;
+  --md-accent-bg-color: #a5c9e8;
+
+  --md-footer-fg-color: #e0d9d1;
+  --md-footer-fg-color--light: #b3aea7;
+  --md-footer-bg-color: #254a69;
+  --md-footer-bg-color--dark: #1e3b54;
+  
+  --md-typeset-a-color: #6ea9da !important; /* Important is needed to override mkdocs specificity */ 
+  --md-typeset-a-color--hover: #a5c9e8;
+
+  --md-palette-icon-color: #f2b957;
+  --md-palette-icon-color--hover: #ed9b0f;
+
+  --md-admonition-icon-color--note: #3b76a7;
+}
+
+/* General styling */
+.md-nav__link:focus, .md-nav__link:hover,
+.md-typeset a:focus, .md-typeset a:hover {
+  text-decoration: underline;
+  color: var(--md-typeset-a-color--hover);
+}
+
+.md-typeset h1 {
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset pre>code {
+  border-radius: var(--md-border-radius);
+}
+
+[data-md-color-scheme='default'] img[src$='#only-dark'],
+[data-md-color-scheme='slate'] img[src$='#only-light'] {
+  /* Hide dark images in light mode and vice versa */
+  display: none !important;
+}
+
+/* Dark/light mode icon styling */
+form[data-md-component=palette] .md-icon svg {
+  fill: var(--md-palette-icon-color);
+}
+
+form[data-md-component=palette] .md-header__button:hover {
+  opacity: 1;
+}
+
+form[data-md-component=palette] .md-header__button:hover svg {
+  fill: var(--md-palette-icon-color--hover);
+}
+
+/* All other icons */
+.md-icon svg {
+  fill: var(--md-default-fg-color);
+}
+
+/* Hides paragraph mark at end of anchored text */
+.md-content .headerlink {
+  display: none;
+  visibility: hidden;
+}
+
+/* Make the primary section font larger on left nav */
+.md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
+  font-size: 1.1em;
+  color: var(--md-default-fg-color);
+}
+
+@media screen and (max-width: 76.1875em) {
+  .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
+    font-size: 0.9em;
+  }
+}
+
+/* Set all non-primary sections font and margin size to be smaller */
+.md-nav__link.md-nav__link--index,
+.md-nav__link {
+  margin-top: 0.45em;
+  font-size: 0.9em;
+}
+
+/* Section lines */
+li > nav.md-nav[data-md-level='3'],
+li > nav.md-nav[data-md-level='4'] {
+  border-left: var(--md-border-width) solid var(--md-accent-fg-color);
+}
+
+/* Custom admonition styling */
+.md-typeset .admonition {
+  border-width: var(--md-border-width);
+}
+
+.md-typeset .admonition.note {
+  border-color: var(--md-admonition-icon-color--note);
+}
+
+/* Admonition icon background color */
+/* Should be the same as the border color above */
+.md-typeset .note > .admonition-title:before,
+.md-typeset .note > summary:before {
+  background-color: var(--md-admonition-icon-color--note);
+}
+
+/* Admonition top background color */
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+  background-color: var(--md-primary-fg-color--light);
+}
+
+/* Styling for custom Admonition notes used for code */
+.md-typeset .admonition.code,
+.md-typeset details.code {
+  border-color: XXX;
+}
+
+/* Admonition icon background color */
+/* Should be the same as the border color above */
+.md-typeset .code > .admonition-title,
+.md-typeset .code > summary {
+  background-color: XXX;
+}
+
+/* Admonition top background color */
+.md-typeset .code > .admonition-title::before,
+.md-typeset .code > summary::before {
+  background-color: XXX;
+  -webkit-mask-image: XXX;
+  mask-image: XXX;
+}
+
+/* Styling for the Copy to Clipboard */
+/* Clipboard icon */
+.md-clipboard {
+  color: var(--md-primary-fg-color--dark);
+}
+
+.md-clipboard:focus,
+.md-clipboard:hover {
+  color: var(--md-accent-bg-color);
+}
+
+.md-dialog {
+  text-align: center;
+}
+
+/* Styling for Tables */
+.md-typeset table:not([class]) {
+  border-radius: var(--md-border-radius);
+  display: inline-table;
+}
+
+.md-typeset .md-typeset__table table th {
+  background-color: var(--md-primary-fg-color--light);
+}
+
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  vertical-align: middle;
+}
+
+/* Tables centered */
+.md-typeset__scrollwrap {
+  text-align: center;
+}
+
+/* Tables in tabs */
+.tabbed-content .md-typeset__scrollwrap {
+  margin: 0;
+}
+
+.tabbed-content .md-typeset__table {
+  display: inline-table;
+  margin-bottom: 0;
+  padding: 0.5em;
+  width: 100%;
+}
+
+/* Tabbed Styling */
+.md-typeset .tabbed-labels {
+  box-shadow: none;
+  padding: 0.2em;
+}
+
+.md-typeset .tabbed-set {
+  background: var(--md-primary-fg-color);
+  border-radius: var(--md-border-radius);
+}
+
+.md-typeset .tabbed-content {
+  background: var(--md-default-bg-color);
+  border: var(--md-border-width) solid var(--md-primary-fg-color);
+  border-bottom-left-radius: var(--md-border-radius);
+  border-bottom-right-radius: var(--md-border-radius);
+}
+
+.md-typeset
+  .tabbed-set
+  > input:first-child:checked
+  ~ .tabbed-labels
+  > :first-child,
+.md-typeset
+  .tabbed-set
+  > input:nth-child(10):checked
+  ~ .tabbed-labels
+  > :nth-child(10),
+.md-typeset
+  .tabbed-set
+  > input:nth-child(11):checked
+  ~ .tabbed-labels
+  > :nth-child(11),
+.md-typeset
+  .tabbed-set
+  > input:nth-child(12):checked
+  ~ .tabbed-labels
+  > :nth-child(12),
+.md-typeset
+  .tabbed-set
+  > input:nth-child(13):checked
+  ~ .tabbed-labels
+  > :nth-child(13),
+.md-typeset
+  .tabbed-set
+  > input:nth-child(14):checked
+  ~ .tabbed-labels
+  > :nth-child(14),
+.md-typeset
+  .tabbed-set
+  > input:nth-child(15):checked
+  ~ .tabbed-labels
+  > :nth-child(15),
+.md-typeset
+  .tabbed-set
+  > input:nth-child(16):checked
+  ~ .tabbed-labels
+  > :nth-child(16),
+.md-typeset
+  .tabbed-set
+  > input:nth-child(17):checked
+  ~ .tabbed-labels
+  > :nth-child(17),
+.md-typeset
+  .tabbed-set
+  > input:nth-child(18):checked
+  ~ .tabbed-labels
+  > :nth-child(18),
+.md-typeset
+  .tabbed-set
+  > input:nth-child(19):checked
+  ~ .tabbed-labels
+  > :nth-child(19),
+.md-typeset
+  .tabbed-set
+  > input:nth-child(2):checked
+  ~ .tabbed-labels
+  > :nth-child(2),
+.md-typeset
+  .tabbed-set
+  > input:nth-child(20):checked
+  ~ .tabbed-labels
+  > :nth-child(20),
+.md-typeset
+  .tabbed-set
+  > input:nth-child(3):checked
+  ~ .tabbed-labels
+  > :nth-child(3),
+.md-typeset
+  .tabbed-set
+  > input:nth-child(4):checked
+  ~ .tabbed-labels
+  > :nth-child(4),
+.md-typeset
+  .tabbed-set
+  > input:nth-child(5):checked
+  ~ .tabbed-labels
+  > :nth-child(5),
+.md-typeset
+  .tabbed-set
+  > input:nth-child(6):checked
+  ~ .tabbed-labels
+  > :nth-child(6),
+.md-typeset
+  .tabbed-set
+  > input:nth-child(7):checked
+  ~ .tabbed-labels
+  > :nth-child(7),
+.md-typeset
+  .tabbed-set
+  > input:nth-child(8):checked
+  ~ .tabbed-labels
+  > :nth-child(8),
+.md-typeset
+  .tabbed-set
+  > input:nth-child(9):checked
+  ~ .tabbed-labels
+  > :nth-child(9) {
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .tabbed-labels > label {
+  color: var(--md-accent-fg-color--light);
+}
+
+.js .md-typeset .tabbed-labels:before {
+  background: var(--md-accent-bg-color);
+  height: 3px;
+}
+
+.md-typeset .tabbed-labels>label:hover {
+  color: var(--md-default-fg-color);
+}
+
+/* Document date styling */
+.md-source-file {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+}
+
+.md-source-file small {
+  display: flex;
+  align-items: end;
+}
+
+.source-file-label {
+  margin-right: 0.5em;
+}
+
+.source-file-seperator {
+  margin: 0 0.5em;
+}
+
+/* Disclaimer styling */
+.disclaimer,
+.page-disclaimer {
+  margin-top: auto;
+  margin-bottom: 1em;
+  font-size: x-small;
+  font-style: italic;
+}
+
+.page-disclaimer {
+  margin-top: 3em;
+}
+
+@media screen and (max-width: 30em) {
+  .source-file-seperator {
+    display: none;
+  }
+
+  .md-source-file {
+    margin: auto;
+  }
+
+  .md-source-file small {
+    display: block;
+    text-align: center;
+  }
+
+  .disclaimer {
+    margin: 2em auto;
+  }
+}
+
+/* Feedback widget styling */
+.md-feedback {
+  margin: 2em auto;
+  text-align: center;
+  border: var(--md-border-width) solid var(--md-primary-fg-color);
+  border-radius: var(--md-border-radius);
+  width: 30%;
+  padding: 0.7em;
+}
+
+.md-feedback__title {
+  font-weight: 300;
+}
+
+/* Footer Styling */
+.md-footer-meta__inner,
+.md-footer-meta__inner.md-grid {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.md-footer-meta__inner {
+  flex-direction: column;
+}
+
+.md-footer-meta__inner.md-grid:first-child {
+  padding: 0.5em;
+}
+
+.md-copyright {
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+.network-links {
+  text-align: center;
+}
+
+.network-links > a {
+  margin-right: 1em;
+}
+
+.md-social__link svg {
+  max-height: 1rem;
+}
+
+/* 404 page */
+.not-found {
+  display: flex;
+  justify-content: center;
+}
