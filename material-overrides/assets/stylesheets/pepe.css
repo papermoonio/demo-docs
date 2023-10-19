@@ -1,3 +1,7 @@
+h1, h2 {
+  font-family: 'Coming Soon', cursive;
+}
+
 :root {
   --md-border-radius: .3rem;
   --md-border-width: .1rem;
@@ -12,7 +16,7 @@
 
   --md-accent-fg-color: #ffffff;
   --md-accent-fg-color-light: #ffffff90;
-  --md-accent-bg-color: #a5c9e8;
+  --md-accent-bg-color: #4a93d1;
 
   --md-footer-fg-color: #373434;
   --md-footer-fg-color--light: #4b4848;
@@ -30,22 +34,25 @@
   --md-admonition-icon--note: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIDYuNC4wIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIENvcHlyaWdodCAyMDIzIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBkPSJNNDEwLjMgMjMxbDExLjMtMTEuMy0zMy45LTMzLjktNjIuMS02Mi4xTDI5MS43IDg5LjhsLTExLjMgMTEuMy0yMi42IDIyLjZMNTguNiAzMjIuOWMtMTAuNCAxMC40LTE4IDIzLjMtMjIuMiAzNy40TDEgNDgwLjdjLTIuNSA4LjQtLjIgMTcuNSA2LjEgMjMuN3MxNS4zIDguNSAyMy43IDYuMWwxMjAuMy0zNS40YzE0LjEtNC4yIDI3LTExLjggMzcuNC0yMi4yTDM4Ny43IDI1My43IDQxMC4zIDIzMXpNMTYwIDM5OS40bC05LjEgMjIuN2MtNCAzLjEtOC41IDUuNC0xMy4zIDYuOUw1OS40IDQ1MmwyMy03OC4xYzEuNC00LjkgMy44LTkuNCA2LjktMTMuM2wyMi43LTkuMXYzMmMwIDguOCA3LjIgMTYgMTYgMTZoMzJ6TTM2Mi43IDE4LjdMMzQ4LjMgMzMuMiAzMjUuNyA1NS44IDMxNC4zIDY3LjFsMzMuOSAzMy45IDYyLjEgNjIuMSAzMy45IDMzLjkgMTEuMy0xMS4zIDIyLjYtMjIuNiAxNC41LTE0LjVjMjUtMjUgMjUtNjUuNSAwLTkwLjVMNDUzLjMgMTguN2MtMjUtMjUtNjUuNS0yNS05MC41IDB6bS00Ny40IDE2OGwtMTQ0IDE0NGMtNi4yIDYuMi0xNi40IDYuMi0yMi42IDBzLTYuMi0xNi40IDAtMjIuNmwxNDQtMTQ0YzYuMi02LjIgMTYuNC02LjIgMjIuNiAwczYuMiAxNi40IDAgMjIuNnoiLz48L3N2Zz4=');
   --md-admonition-icon--code: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTE0LjYsMTYuNkwxOS4yLDEyTDE0LjYsNy40TDE2LDZMMjIsMTJMMTYsMThMMTQuNiwxNi42TTkuNCwxNi42TDQuOCwxMkw5LjQsNy40TDgsNkwyLDEyTDgsMThMOS40LDE2LjZaIiAvPjwvc3ZnPg==');
 
+  --md-home-hero-bg-color: #dcdcdc;
+
   /** Optional: For branded code snippets**/
+  --md-code-fg-color: #0F90DB;
   /** Code highlighting color shades **/
   /* Numbers */
-  /* --md-code-hl-number-color: white; */
+  --md-code-hl-number-color: #086136;
   /* Python function names */
-  /* --md-code-hl-function-color: red; */
+  --md-code-hl-function-color: #EB7933;
   /* JavaScript booleans, Python variable names */
-  /* --md-code-hl-name-color: orange; */
+  --md-code-hl-name-color: #0F90DB;
   /* Strings */
-  /* --md-code-hl-string-color: yellow; */
+  --md-code-hl-string-color: #EB7933;
   /* Python print */
-  /* --md-code-hl-constant-color: green; */
+  --md-code-hl-constant-color: #2A8D00;
   /* Imports, const, let, var, async, await, function, etc. */
-  /* --md-code-hl-keyword-color: blue; */
+  --md-code-hl-keyword-color: #2A8D00;
   /* Comments */
-  /* --md-code-hl-comment-color: purple; */
+  --md-code-hl-comment-color: #545454;
 }
 
 [data-md-color-scheme='slate'] {
@@ -69,6 +76,26 @@
   --md-palette-icon-color--hover: #ed9b0f;
 
   --md-admonition-icon-color--note: #3b76a7;
+
+  --md-home-hero-bg-color: hsla(var(--md-hue),15%,21%,1);
+
+  /** Optional: For branded code snippets**/
+  --md-code-fg-color: #38B6FF;
+  /** Code highlighting color shades **/
+  /* Numbers */
+  --md-code-hl-number-color: #00bf63;
+  /* Python function names */
+  --md-code-hl-function-color: #FFBD59;
+  /* JavaScript booleans, Python variable names */
+  --md-code-hl-name-color: #38B6FF;
+  /* Strings */
+  --md-code-hl-string-color: #FFBD59;
+  /* Python print */
+  --md-code-hl-constant-color: #7ED957;
+  /* Imports, const, let, var, async, await, function, etc. */
+  --md-code-hl-keyword-color: #7ED957;
+  /* Comments */
+  --md-code-hl-comment-color: #D9D9D9;
 }
 
 /* General styling */
@@ -116,6 +143,24 @@ form[data-md-component=palette] .md-header__button:hover svg {
   visibility: hidden;
 }
 
+/* Header styles */
+[dir=ltr] .md-header__title {
+  margin-left: 0;
+}
+
+.md-header__button.md-logo img {
+  height: 2rem;
+}
+
+.md-tabs__list {
+  margin: 1em;
+}
+
+.md-tabs__item {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 /* Make the primary section font larger on left nav */
 .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
   font-size: 1.1em;
@@ -133,6 +178,12 @@ form[data-md-component=palette] .md-header__button:hover svg {
 .md-nav__link {
   margin-top: 0.45em;
   font-size: 0.9em;
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link {
+    box-shadow: none;
+  }
 }
 
 /* Section lines */
@@ -429,6 +480,10 @@ li > nav.md-nav[data-md-level='4'] {
 
 .md-feedback__title {
   font-weight: 300;
+}
+
+.md-feedback__icon:hover svg {
+  fill: var(--md-typeset-a-color--hover);
 }
 
 /* Footer Styling */

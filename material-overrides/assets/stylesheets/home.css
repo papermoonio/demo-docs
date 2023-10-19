@@ -1,6 +1,6 @@
 /* Styles for the hero section */
 .hero {
-  background-image: url('https://images.pexels.com/photos/1029624/pexels-photo-1029624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-image: url('../images/home-background.png');
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -8,8 +8,12 @@
 }
 
 .hero-content {
+  width: fit-content;
   max-width: 800px;
   margin: 0 auto;
+  padding: 2em 3em;
+  background: var(--md-home-hero-bg-color);
+  border-radius: 3em;
 }
 
 .hero h1 {
@@ -19,27 +23,6 @@
 .hero p {
   font-size: 18px;
   margin-top: 20px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--md-primary-fg-color);
-  border: 2px solid var(--md-primary-fg-color);
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
-}
-
-.md-typeset a.btn {
-  color: var(--md-default-fg-color);
-}
-
-.md-typeset a.btn:hover {
-  background-color: var(--md-default-fg-color);
-  color: var(--md-primary-fg-color);
 }
 
 /* Styles for the featured content section */
@@ -53,14 +36,20 @@
 .feature {
   text-align: center;
   padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  box-shadow: 0px 0px 1px var(--md-default-fg-color);
+  border-radius: 2em;
+  color: var(--md-default-fg-color);
+}
+
+.feature a {
+  margin-top: auto;
 }
 
 .feature img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  border: 2px solid var(--md-default-fg-color);
+  border-radius: 1em;
 }
 
 .feature h2 {
