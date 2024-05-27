@@ -10,9 +10,9 @@
 #   - 'js/externalLinkModal.js' # Enable if you want a warning when users leave your site
 #   - 'https://widget.kapa.ai/kapa-widget.bundle.js' # Enable is project is using Kapa
 #   - 'js/initKapaWidget.js' # Enable if project is using Kapa
-# Used for custom fonts. If you're using a publicly available font, this is not necessary
-# 'extra_css':
-#   - '/assets/stylesheets/extra.css'
+# Used for additional CSS files and custom fonts. If you're using a publicly available font, this is not necessary
+'extra_css':
+  - '/assets/stylesheets/terminal.css'
 'theme':
   'name': 'material'
   'custom_dir': 'material-overrides'
@@ -22,12 +22,14 @@
     #'text': 'XXX' # Add the name of the font. The default is Roboto
     #'code': 'XXX' # This is optional. The default is Roboto Mono
   'features':
-    - navigation.footer # Shows previous and next on the footer
+    - 'content.code.annotate' # Adds annotations to code blocks
+    - 'content.code.copy' # Adds copy to clipboard button to code snippets
+    - 'content.tooltips' # Adds tooltips
+    - 'navigation.footer' # Shows previous and next on the footer
     - 'navigation.tabs' # Top-level sections are rendered below the header (can be modified to in-line with CSS)
     - 'navigation.tabs.sticky' # When scrolling, the tabs remain at the top of the page
     - 'navigation.sections' # Render top-level sections as groups in the sidebar
-    - 'navigation.indexes'
-    - 'content.code.copy'
+    - 'navigation.indexes' # Index pages
   # Used for light and dark mode feature
   'palette':
     # Palette toggle for light mode
@@ -43,19 +45,30 @@
         'icon': material/weather-sunny
         'name': Switch to light mode
 'markdown_extensions':
-  - 'codehilite'
-  - 'meta' 
-  - 'toc':
-      'permalink': !!bool 'true'
-      'title': 'Sections'
+  - 'abbr'
   - 'admonition'
+  - 'attr_list'
+  - 'codehilite'
+  - 'md_in_html'
+  - 'meta' 
+  - 'pymdownx.details'
+  - 'pymdownx.emoji':
+      'emoji_index': !!python/name:material.extensions.emoji.twemoji
+      'emoji_generator': !!python/name:material.extensions.emoji.to_svg
+  - 'pymdownx.highlight':
+      'anchor_linenums': !!bool 'true'
+      'line_spans': __span
+      'pygments_lang_class': !!bool 'true'
+  - pymdownx.inlinehilite
+  - pymdownx.keys
   - 'pymdownx.snippets':
       'base_path': 'pepe-docs/.snippets'
+      'url_download': !!bool 'true'
+  - 'pymdownx.superfences'
   - 'pymdownx.tabbed':
       'alternate_style': !!bool 'true'
-  - 'pymdownx.superfences'
-  - 'pymdownx.details'
-  - 'attr_list'
+  - 'toc':
+      'title': 'Sections'
 'plugins':
   - 'search'
   - 'awesome-pages'

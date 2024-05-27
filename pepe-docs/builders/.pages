@@ -2,3 +2,4 @@ nav:
  - index.md # Comment this out to hide the index page
  - get-started
  - integrations
+ - reference

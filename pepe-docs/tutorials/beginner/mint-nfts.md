@@ -34,29 +34,35 @@ Here's a high-level overview of the steps involved:
 
 === "JavaScript"
 
-    ```js
+    ```js title="mint-nfts.js"
     const Web3 = require('web3');
     const web3 = new Web3('YOUR_ETHEREUM_PROVIDER');
 
-    const { abi, evm } = require('./PepeNFT.json'); // Assuming you have a Pepe NFT contract ABI and bytecode
+    // Assuming you have a Pepe NFT contract ABI and bytecode
+    const { abi, evm } = require('./PepeNFT.json');
 
     const deployAndMint = async () => {
-      const accounts = await web3.eth.getAccounts();
+    const accounts = await web3.eth.getAccounts();
 
-      // Deploy the Pepe NFT contract
-      const contract = new web3.eth.Contract(abi);
-      const deployedContract = await contract
+    // Deploy the Pepe NFT contract
+    const contract = new web3.eth.Contract(abi);
+    const deployedContract = await contract
         .deploy({ data: evm.bytecode.object })
         .send({ from: accounts[0], gas: '1000000' });
 
-      console.log('Pepe NFT Contract deployed at:', deployedContract.options.address);
+    console.log(
+        'Pepe NFT Contract deployed at:',
+        deployedContract.options.address
+    );
 
-      // Mint a new Pepe NFT
-      const tokenId = 1; // The unique identifier for the Pepe NFT
-      const recipient = accounts[0]; // The owner of the NFT
-      await deployedContract.methods.mintPepeNFT(tokenId, recipient).send({ from: accounts[0] });
+    // Mint a new Pepe NFT
+    const tokenId = 1; // The unique identifier for the Pepe NFT
+    const recipient = accounts[0]; // The owner of the NFT
+    await deployedContract.methods
+        .mintPepeNFT(tokenId, recipient)
+        .send({ from: accounts[0] });
 
-      console.log('Pepe NFT with ID', tokenId, 'minted for', recipient);
+    console.log('Pepe NFT with ID', tokenId, 'minted for', recipient);
     };
 
     deployAndMint();
@@ -64,43 +70,37 @@ Here's a high-level overview of the steps involved:
 
 === "Python"
 
-    ```py
+    ```py title="mint-nfts.py"
     from web3 import Web3
     from web3.contract import Contract
 
     # Connect to the Ethereum network
-    w3 = Web3(Web3.HTTPProvider('YOUR_ETHEREUM_PROVIDER'))
+    w3 = Web3(Web3.HTTPProvider("YOUR_ETHEREUM_PROVIDER"))
 
     # Load the ABI and bytecode from your Pepe NFT contract
-    with open('PepeNFT.json') as json_file:
+    with open("PepeNFT.json") as json_file:
         contract_data = json.load(json_file)
 
-    contract = w3.eth.contract(
-        abi=contract_data['abi'],
-        bytecode=contract_data['bytecode']
-    )
+    contract = w3.eth.contract(abi=contract_data["abi"], bytecode=contract_data["bytecode"])
 
     # Deploy the Pepe NFT contract
-    tx_hash = contract.constructor().transact({
-        'from': w3.eth.accounts[0],
-        'gas': 2000000
-    })
+    tx_hash = contract.constructor().transact({"from": w3.eth.accounts[0], "gas": 2000000})
 
     tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash)
 
     contract_address = tx_receipt.contractAddress
 
-    print('Pepe NFT Contract deployed at:', contract_address)
+    print("Pepe NFT Contract deployed at:", contract_address)
 
     # Mint a new Pepe NFT
     token_id = 1
     recipient = w3.eth.accounts[0]
 
-    tx_hash = contract.functions.mintPepeNFT(token_id, recipient).transact({
-        'from': w3.eth.accounts[0]
-    })
+    tx_hash = contract.functions.mintPepeNFT(token_id, recipient).transact(
+        {"from": w3.eth.accounts[0]}
+    )
 
     w3.eth.waitForTransactionReceipt(tx_hash)
 
-    print(f'Pepe NFT with ID {token_id} minted for {recipient}')
+    print(f"Pepe NFT with ID {token_id} minted for {recipient}")
     ```
