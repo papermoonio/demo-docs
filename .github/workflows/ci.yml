@@ -24,5 +24,11 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material 
+     - name: Install pip requirements
+        run: |
+          cd moonbeam-mkdocs
+          # upgrade pip
+          pip3 install --upgrade pip setuptools==65.7.0
+          # install dependencies quietly
+          pip3 install -r requirements.txt &> /dev/null && echo "Dependencies installed" || echo "Error while installing dependencies"
       - run: mkdocs gh-deploy --force
