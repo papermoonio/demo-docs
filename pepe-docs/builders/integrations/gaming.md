@@ -18,7 +18,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry:
 - [Lorem Ipsum - Link 3](https://www.example.com) - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
 - [Lorem Ipsum - Link 4](https://www.example.com) - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
 - [Lorem Ipsum - Link 5](https://www.example.com) - Sunt in culpa qui officia deserunt mollit anim id est laborum.
-- [Lorem Ipsum - Link 6](https://www.example.com) - Excepteur sint occaecat cupidatat non proident.
 
 ## Lorem Ipsum
 
