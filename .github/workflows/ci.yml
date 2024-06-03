@@ -7,7 +7,7 @@ permissions:
   contents: write
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v4
       - name: Configure Git Credentials
@@ -24,11 +24,14 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-     - name: Install pip requirements
+      - name: Install System Dependencies
         run: |
-          cd moonbeam-mkdocs
+          sudo apt-get update
+          sudo apt-get install -y python3-dev build-essential
+      - name: Install pip requirements
+        run: |
           # upgrade pip
-          pip3 install --upgrade pip setuptools==65.7.0
+          python -m pip install --upgrade pip setuptools 'cython<3.0.0' wheel
           # install dependencies quietly
-          pip3 install -r requirements.txt &> /dev/null && echo "Dependencies installed" || echo "Error while installing dependencies"
+          python -m pip install -r requirements.txt
       - run: mkdocs gh-deploy --force

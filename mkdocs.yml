@@ -1,9 +1,8 @@
 # Replace XXX with the network's name
 'site_name': 'Pepe Docs'
 'site_url': 'https://papermoonio.github.io/demo-docs/'
-'site_dir': '/var/www/pepe-docs-static'
 'docs_dir': 'pepe-docs'
-'copyright': '© 2023 Pepe Foundation. All Rights Reserved.'
+'copyright': '© 2024 Pepe Foundation. All Rights Reserved.'
 # Used for extra javascript files in the `docs` repository
 # 'extra_javascript':
 #   - 'js/externalLinkModal.js' # Enable if you want a warning when users leave your site
@@ -11,13 +10,17 @@
 #   - 'js/initKapaWidget.js' # Enable if project is using Kapa
 # Used for additional CSS files and custom fonts. If you're using a publicly available font, this is not necessary
 'extra_css':
-  - '/assets/stylesheets/terminal.css'
+  - 'assets/stylesheets/extra.css'
+  - 'assets/stylesheets/home.css'
+  - 'assets/stylesheets/index-page.css'
+  - 'assets/stylesheets/pepe.css'
+  - 'assets/stylesheets/terminal.css'
 'theme':
   'name': 'material'
   'custom_dir': 'material-overrides'
-  'favicon': '/assets/images/pepe-favicon.png'
-  'logo': '/assets/images/pepe-logo.png'
-  'logo_dark_mode': '/assets/images/pepe-logo-dark.png' # Only required if using dark and light modes  #'font': # This is for Google Fonts
+  'favicon': 'assets/images/pepe-favicon.png'
+  'logo': 'assets/images/pepe-logo.png'
+  'logo_dark_mode': 'assets/images/pepe-logo-dark.png' # Only required if using dark and light modes  #'font': # This is for Google Fonts
     #'text': 'XXX' # Add the name of the font. The default is Roboto
     #'code': 'XXX' # This is optional. The default is Roboto Mono
   'features':
