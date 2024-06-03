@@ -1,7 +1,6 @@
 # Replace XXX with the network's name
 'site_name': 'Pepe Docs'
-'site_url': 'https://pepe/'
-'home_url': 'https://pepe/'
+'site_url': 'https://papermoonio.github.io/demo-docs/'
 'site_dir': '/var/www/pepe-docs-static'
 'docs_dir': 'pepe-docs'
 'copyright': '© 2023 Pepe Foundation. All Rights Reserved.'
