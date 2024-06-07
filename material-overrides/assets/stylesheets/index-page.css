@@ -38,14 +38,10 @@
 }
 
 .subsection-wrapper .card {
-  border: 2px solid var(--md-primary-fg-color);
-  border-radius: 1.5em;
+  border: 1px solid var(--md-primary-fg-color);
+  border-radius: var(--md-border-radius);
   margin: 1em 0;
   text-decoration: none;
-}
-
-.subsection-wrapper .card:hover {
-  border-color: var(--md-accent-bg-color);
 }
 
 .md-typeset .subsection-wrapper a:hover {
