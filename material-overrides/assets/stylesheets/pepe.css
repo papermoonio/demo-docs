@@ -77,8 +77,8 @@ body {
   --md-default-fg-color: #ffffff;
   --md-default-bg-color: #000000;
   
-  --md-primary-fg-color: #254a69;
-  --md-primary-fg-color--light: #1e3b5490;
+  --md-primary-fg-color: var(--blue-dark-non-transparent-30);
+  --md-primary-fg-color--light: #132e47;
   --md-primary-fg-color--dark: #254a69;
 
   --md-accent-fg-color: #ffffff;
@@ -100,10 +100,11 @@ body {
 
   --md-admonition-icon-color--note: #3b76a7;
 
-  --md-home-hero-bg-color: hsla(var(--md-hue),15%,21%,1);
+  --md-home-hero-bg-color: #000a15;
 
   /** Optional: For branded code snippets**/
   --md-code-fg-color: #38B6FF;
+  --md-code-bg-color: hsl(225deg 4.46% 6.86%);
   /** Code highlighting color shades **/
   /* Numbers */
   --md-code-hl-number-color: #00bf63;
