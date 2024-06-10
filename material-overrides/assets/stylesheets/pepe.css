@@ -932,3 +932,9 @@ li > nav.md-nav[data-md-level='4'] {
     width: 34.4rem;
   }
 }
+
+@media screen and (max-width: 76.234375em) {
+  .md-tabs {
+    display: none;
+  }
+}
