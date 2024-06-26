@@ -68,7 +68,7 @@ Snippets can be reusable text or code files. With the snippets, you can pull reu
 The following snippet is pulled in from a [GitHub URL](https://raw.githubusercontent.com/moonbeam-foundation/moonbeam-docs/master/.snippets/code/builders/build/substrate-api/polkadot-js-api/adding-accounts-mnemonic.js){target=\_blank}:
 
 ```js
---8<-- "https://raw.githubusercontent.com/moonbeam-foundation/moonbeam-docs/master/.snippets/code/builders/build/substrate-api/polkadot-js-api/adding-accounts-mnemonic.js"
+--8<-- "https://raw.githubusercontent.com/moonbeam-foundation/moonbeam-docs/master/.snippets/code/builders/substrate/libraries/polkadot-js-api/adding-accounts-mnemonic.js"
 ```
 
 ## Terminal Window
