@@ -81,38 +81,4 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry:
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry:
 
-1. Import the required packages
 
-    ```js
-    --8<-- "https://raw.githubusercontent.com/moonbeam-foundation/moonbeam-docs/master/.snippets/code/builders/build/substrate-api/polkadot-js-api/adding-accounts-mnemonic.js:2:4"
-    ```
-
-2. Import Ethereum account from mnemonic
-
-    ```js
-    --8<-- "https://raw.githubusercontent.com/moonbeam-foundation/moonbeam-docs/master/.snippets/code/builders/build/substrate-api/polkadot-js-api/adding-accounts-mnemonic.js:7:9"
-    ```
-
-3. Define index of the derivation path and the derivation path
-
-    ```js
-    --8<-- "https://raw.githubusercontent.com/moonbeam-foundation/moonbeam-docs/master/.snippets/code/builders/build/substrate-api/polkadot-js-api/adding-accounts-mnemonic.js:11:14"
-    ```
-
-4. Extract Ethereum address from mnemonic
-
-    ```js
-    --8<-- "https://raw.githubusercontent.com/moonbeam-foundation/moonbeam-docs/master/.snippets/code/builders/build/substrate-api/polkadot-js-api/adding-accounts-mnemonic.js:17:20"
-    ```
-
-5. Extract private key from mnemonic
-
-    ```js
-    --8<-- "https://raw.githubusercontent.com/moonbeam-foundation/moonbeam-docs/master/.snippets/code/builders/build/substrate-api/polkadot-js-api/adding-accounts-mnemonic.js:22"
-    ```
-
-???+ "account.js"
-
-    ```js
-    --8<-- "https://raw.githubusercontent.com/moonbeam-foundation/moonbeam-docs/master/.snippets/code/builders/build/substrate-api/polkadot-js-api/adding-accounts-mnemonic.js"
-    ```

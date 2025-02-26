@@ -81,6 +81,8 @@
   - 'macros':
       'include_yaml':
         - 'pepe-docs/variables.yml'
+  - 'social':
+      'cards_font': 'montserrat'
 'extra':
   'generator': !!bool 'false'
   'social':
