@@ -81,9 +81,7 @@
   - 'macros':
       'include_yaml':
         - 'pepe-docs/variables.yml'
-  - 'social':
-      'cards_layout_options':
-        'font_family': 'Ubuntu'
+  - 'social'
 'extra':
   'generator': !!bool 'false'
   'social':
