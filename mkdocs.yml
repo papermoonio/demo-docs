@@ -82,7 +82,8 @@
       'include_yaml':
         - 'pepe-docs/variables.yml'
   - 'social':
-      'cards_font': 'montserrat'
+      'cards_layout_options':
+        'font_family': 'Ubuntu'
 'extra':
   'generator': !!bool 'false'
   'social':
